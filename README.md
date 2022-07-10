@@ -1,6 +1,14 @@
 # X64DBG-ViewDllNotification
 
+X64DBG plugin viewing dll notification
+
 ![image](https://user-images.githubusercontent.com/13917777/178156979-11bd4ade-3031-40c0-bb85-0606fba90d5c.png)
+
+
+## Usage
+```
+ViewDllNotification
+```
 
 ## Building
 
