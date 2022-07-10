@@ -1,6 +1,6 @@
 # X64DBG-ViewDllNotification
 
-![image](https://user-images.githubusercontent.com/13917777/178156916-cde705de-fc79-4101-bf68-a0c936fec4b4.png)
+![image](https://user-images.githubusercontent.com/13917777/178156979-11bd4ade-3031-40c0-bb85-0606fba90d5c.png)
 
 ## Building
 
