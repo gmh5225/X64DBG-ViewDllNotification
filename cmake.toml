@@ -20,7 +20,7 @@ include-after = [
     "cmake/x64dbg.cmake",
 ]
 
-[target.PluginTemplate]
+[target.ViewDllNotification]
 type = "shared"
 sources = [
     "src/*.cpp",

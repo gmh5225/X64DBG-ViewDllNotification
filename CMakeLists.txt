@@ -37,34 +37,34 @@ set(CMAKE_SHARED_LINKER_FLAGS_RELEASE "/DEBUG:FULL /INCREMENTAL:NO" CACHE STRING
 set(CMAKE_BUILD_TYPE "Release" CACHE STRING "")
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>" CACHE STRING "")
 
-project(PluginTemplate)
+project(ViewDllNotification)
 
 include("cmake/CPM.cmake")
 include("cmake/x64dbg.cmake")
 
-# Target PluginTemplate
-set(CMKR_TARGET PluginTemplate)
-set(PluginTemplate_SOURCES "")
+# Target ViewDllNotification
+set(CMKR_TARGET ViewDllNotification)
+set(ViewDllNotification_SOURCES "")
 
-list(APPEND PluginTemplate_SOURCES
+list(APPEND ViewDllNotification_SOURCES
 	"src/plugin.cpp"
 	"src/pluginmain.cpp"
 	"src/plugin.h"
 	"src/pluginmain.h"
 )
 
-list(APPEND PluginTemplate_SOURCES
+list(APPEND ViewDllNotification_SOURCES
 	cmake.toml
 )
 
-set(CMKR_SOURCES ${PluginTemplate_SOURCES})
-add_library(PluginTemplate SHARED)
+set(CMKR_SOURCES ${ViewDllNotification_SOURCES})
+add_library(ViewDllNotification SHARED)
 
-if(PluginTemplate_SOURCES)
-	target_sources(PluginTemplate PRIVATE ${PluginTemplate_SOURCES})
+if(ViewDllNotification_SOURCES)
+	target_sources(ViewDllNotification PRIVATE ${ViewDllNotification_SOURCES})
 endif()
 
-source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${PluginTemplate_SOURCES})
+source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES ${ViewDllNotification_SOURCES})
 
 x64dbg_plugin(${CMKR_TARGET})
 
